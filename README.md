@@ -11,7 +11,7 @@ To build the examples inside this repository:
 mkdir build
 cd build
 cmake ..
-make
+make -j4
 ```
 ## **Installation** ##
 To build your own application with the SDK, you can install the yobotics_sdk to your system directory:
@@ -19,6 +19,7 @@ To build your own application with the SDK, you can install the yobotics_sdk to 
 mkdir build
 cd build
 cmake ..
+make
 sudo make install
 ```
 Or install yobotics_sdk to a specified directory:
@@ -26,6 +27,7 @@ Or install yobotics_sdk to a specified directory:
 mkdir build
 cd build
 cmake .. -DCMAKE_INSTALL_PREFIX=/opt/yobotics_sdk
+make
 sudo make install
 ```
 Note that if you install the library to other places other than /opt/yobotics_sdk, you need to make sure the path is added to "${CMAKE_PREFIX_PATH}" so that cmake can find it with "find_package()".
