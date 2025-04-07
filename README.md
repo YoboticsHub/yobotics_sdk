@@ -21,7 +21,7 @@ cd build
 cmake ..
 sudo make install
 ```
-Or install unitree_sdk2 to a specified directory:
+Or install yobotics_sdk to a specified directory:
 ```c++
 mkdir build
 cd build
