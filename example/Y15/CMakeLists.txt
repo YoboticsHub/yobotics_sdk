@@ -1,0 +1,2 @@
+add_executable(Y15_sport_client Y15_sport_client.cpp)
+target_link_libraries(Y15_sport_client yobotics_sdk)
